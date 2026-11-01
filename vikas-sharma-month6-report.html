@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vikas Sharma – Month 6 LinkedIn Performance Report | GroNXT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#101828;--ink-soft:#2b3344;--paper:#FAF8F3;--paper-dim:#F0ECE1;--card:#FFFFFF;--line:#E4DFD2;--line-dark:#2A3245;--gold:#B8892F;--gold-soft:#E7CE9C;--teal:#1F6F63;--teal-light:#4C9C8D;--brick:#A85239;--muted:#6B7280;--radius-s:3px;--radius-m:6px;--maxw:1180px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);min-height:100vh;display:flex}
+.rail{position:fixed;top:0;left:0;bottom:0;width:220px;background:var(--ink);border-right:1px solid var(--line-dark);display:flex;flex-direction:column;z-index:100;overflow-y:auto;}
+.rail-brand{padding:28px 20px 20px;font-family:'Fraunces',serif;font-size:15px;color:#fff;line-height:1.4;border-bottom:1px solid var(--line-dark);}
+.rail-brand small{display:block;font-size:11px;color:var(--gold-soft);margin-top:4px;font-family:'Inter',sans-serif;letter-spacing:.04em;}
+.rail-nav{padding:16px 0;flex:1}
+.rail-nav a{display:block;padding:10px 20px;font-size:13px;color:#B7BECE;text-decoration:none;border-left:2px solid transparent;transition:all .15s;}
+.rail-nav a:hover,.rail-nav a.active{color:#fff;border-left-color:var(--gold);background:rgba(255,255,255,.04);}
+.rail-foot{padding:16px 20px;font-size:11px;color:#5a6378;border-top:1px solid var(--line-dark);}
+.main{margin-left:220px;flex:1;min-width:0}
+.hero{background:var(--ink);padding:64px 0 48px;background-image:radial-gradient(circle at 88% 12%,rgba(184,137,47,0.14),transparent 45%);border-bottom:1px solid var(--line-dark);}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+.hero-kicker{font-size:13px;color:var(--gold-soft);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(30px,4vw,44px);color:#fff;font-weight:700;line-height:1.15;max-width:18ch;margin-bottom:14px}
+.hero h1 span{font-weight:300}
+.hero-sub{font-size:16px;color:#B7BECE;max-width:62ch;line-height:1.6;margin-bottom:24px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:20px 36px;margin-bottom:36px}
+.hero-meta div{font-size:13px;color:#8892A4}
+.hero-meta b{color:#D0D7E3;font-weight:600}
+.kpi-strip{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line-dark);padding-top:28px;gap:24px;}
+.kpi-num{font-family:'Fraunces',serif;font-size:34px;color:#fff;line-height:1;margin-bottom:6px}
+.kpi-num span{font-size:17px;color:var(--gold-soft);font-weight:400}
+.kpi-label{font-size:12px;color:#8892A4;line-height:1.4}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+section:last-child{border-bottom:none}
+.section-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:8px}
+.section-num{font-family:'Fraunces',serif;font-size:13px;color:var(--gold);font-weight:400;letter-spacing:.04em;margin-bottom:4px}
+.section-head h2{font-family:'Fraunces',serif;font-size:26px;font-weight:600;color:var(--ink);line-height:1.2}
+.section-intro{max-width:70ch;color:var(--ink-soft);font-size:15px;line-height:1.65;margin-bottom:32px}
+.grid-2{display:grid;grid-template-columns:1.1fr 0.9fr;gap:28px;align-items:start}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat-mini-row{display:flex;flex-wrap:wrap;gap:20px;margin-bottom:4px}
+.stat-mini .n{font-family:'Fraunces',serif;font-size:22px;color:var(--teal);line-height:1}
+.stat-mini .l{font-size:11.5px;color:var(--muted);margin-top:3px}
+.stat-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:18px 20px}
+.stat-card .n{font-family:'Fraunces',serif;font-size:26px;line-height:1;margin-bottom:5px}
+.stat-card .n.teal{color:var(--teal)}.stat-card .n.gold{color:var(--gold)}
+.stat-card .l{font-size:12px;color:var(--muted)}
+.bullets{padding-left:18px;list-style:disc}
+.bullets li{font-size:14px;color:var(--ink-soft);line-height:1.6;margin-bottom:8px}
+.bullets li:last-child{margin-bottom:0}
+.bullets li b{color:var(--ink);font-weight:600}
+.table-scroll{overflow-x:auto;max-height:500px;overflow-y:auto;border:1px solid var(--line);border-radius:var(--radius-m)}
+.data-table{width:100%;border-collapse:collapse;font-size:13.5px}
+.data-table thead tr{background:var(--paper-dim);position:sticky;top:0;z-index:2}
+.data-table th{padding:10px 14px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;border-bottom:1px solid var(--line)}
+.data-table td{padding:10px 14px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover{background:var(--paper-dim)}
+.tabbar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+.tabbar button{padding:6px 14px;font-size:13px;border-radius:20px;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink-soft);font-family:'Inter',sans-serif;transition:all .15s;}
+.tabbar button:hover{border-color:var(--ink);color:var(--ink)}
+.tabbar button.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.people-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:20px}
+.notable-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:14px 16px;display:flex;align-items:center;gap:12px;}
+.notable-avatar{width:38px;height:38px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;flex-shrink:0;}
+.notable-name{font-size:13.5px;font-weight:600;color:var(--ink);margin-bottom:2px}
+.notable-role{font-size:12px;color:var(--muted);line-height:1.3}
+.notable-company{font-size:12px;color:var(--teal);font-weight:500}
+.funnel{display:flex;flex-direction:column;gap:10px}
+.funnel-step{display:grid;grid-template-columns:160px 1fr 70px;align-items:center;gap:12px;}
+.funnel-label{font-size:13px;color:var(--ink-soft);font-weight:500}
+.funnel-bar-bg{background:var(--paper-dim);border-radius:3px;height:10px;overflow:hidden}
+.funnel-bar-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--teal),var(--teal-light))}
+.funnel-val{font-family:'Fraunces',serif;font-size:16px;color:var(--ink);text-align:right}
+.company-bar-row{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}
+.company-bar-row:last-child{border-bottom:none}
+.company-bar-label{font-size:13px;color:var(--ink-soft);font-weight:500;width:200px;flex-shrink:0}
+.company-bar-bg{flex:1;background:var(--paper-dim);border-radius:3px;height:8px;overflow:hidden}
+.company-bar-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--teal),var(--teal-light))}
+.company-bar-val{font-family:'Fraunces',serif;font-size:15px;color:var(--ink);width:36px;text-align:right;flex-shrink:0}
+.outcome-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:20px 22px;border-left:4px solid var(--teal);margin-bottom:16px;}
+.outcome-card:last-child{margin-bottom:0}
+.outcome-type{font-size:12px;color:var(--teal);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.outcome-name{font-size:17px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.outcome-role{font-size:13px;color:var(--muted);margin-bottom:4px}
+.outcome-co{font-size:13px;color:var(--teal);font-weight:500;margin-bottom:10px}
+.outcome-detail{font-size:13.5px;color:var(--ink-soft);line-height:1.6}
+.chart-wrap{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:20px;}
+.chart-title{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:14px;font-weight:600}
+@media(max-width:900px){
+  .rail{display:none}.main{margin-left:0}
+  .grid-2,.grid-4{grid-template-columns:1fr}
+  .kpi-strip{grid-template-columns:repeat(2,1fr)}
+  .people-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="rail">
+  <div class="rail-brand">
+    <img src="data:image/png;base64,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" alt="GroNXT" style="height:20px;width:auto;display:block;margin-bottom:11px;">
+    LinkedIn Performance Report<small>Month 6</small>
+  </div>
+  <div class="rail-nav" id="railNav">
+    <a href="#overview" class="active">Overview</a>
+    <a href="#content">Content Performance</a>
+    <a href="#network">Network Growth</a>
+    <a href="#outcomes">Inbound Opportunities</a>
+  </div>
+  <div class="rail-foot">Prepared by GroNXT</div>
+</div>
+
+<div class="main">
+
+<div class="hero" id="overview">
+  <div class="wrap">
+    <div class="hero-kicker">GroNXT &mdash; LinkedIn Performance Report</div>
+    <h1>Vikas Sharma<br><span style="font-weight:300;">Month 6</span></h1>
+    <p class="hero-sub">Posts 21–24 covering Month 6 of the GroNXT LinkedIn branding programme, targeting senior program and delivery leaders in automotive, connected mobility, EV/electrification, and IT services. 700 connection requests sent, 300+ accepted, and 2 inbound opportunities received from talent acquisition leaders at KPIT and executive search.</p>
+    <div class="hero-meta">
+      <div><b>Reporting Period</b> Month 6</div>
+      <div><b>Posts Published</b> 4 (Posts 21–24)</div>
+      <div><b>Programme</b> LinkedIn Branding &amp; Networking</div>
+      <div><b>Prepared by</b> GroNXT</div>
+    </div>
+    <div class="kpi-strip">
+      <div class="kpi"><div class="kpi-num">1,986</div><div class="kpi-label">Total Impressions</div></div>
+      <div class="kpi"><div class="kpi-num">94</div><div class="kpi-label">Total Engagement<br><small style="font-size:10px;color:#6b7488;">(Likes + Comments + Reposts)</small></div></div>
+      <div class="kpi"><div class="kpi-num">700</div><div class="kpi-label">Connection Requests Sent</div></div>
+      <div class="kpi"><div class="kpi-num">300+ <span>(&gt;42%)</span></div><div class="kpi-label">Connections Accepted</div></div>
+      <div class="kpi"><div class="kpi-num">2</div><div class="kpi-label">Inbound Opportunities</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 01 CONTENT -->
+<section id="content"><div class="wrap">
+  <div class="section-head"><div><div class="section-num">01 &mdash; Content Performance</div><h2>Post Metrics</h2></div></div>
+  <p class="section-intro">4 posts published in Month 6 (Posts 21–24). Post 21 led on both reach and engagement — 897 impressions and a 6.6% engagement rate — with 57 likes and 2 comments from Directors, Country Heads, Program Managers and Delivery Leaders across Wipro Japan, Cognizant, TCS and Infosys. 52 total named engagers across the month.</p>
+
+  <div class="grid-2" style="margin-bottom:28px;">
+    <div>
+      <div class="stat-mini-row">
+        <div class="stat-mini"><div class="n">1,986</div><div class="l">Total Impressions</div></div>
+        <div class="stat-mini"><div class="n">92</div><div class="l">Total Likes</div></div>
+        <div class="stat-mini"><div class="n">2</div><div class="l">Comments</div></div>
+        <div class="stat-mini"><div class="n">0</div><div class="l">Reposts</div></div>
+      </div>
+      <ul class="bullets" style="margin-top:20px;">
+        <li><b>Post 21</b> was the standout performer — 897 impressions and a 6.6% engagement rate, with likes from the Country Head &amp; MD of Wipro Japan, a Director at Cognizant, and Program Managers across automotive embedded and connected car domains.</li>
+        <li><b>Posts 22, 23 and 24</b> achieved engagement rates of 3.0%–3.6%, sustaining consistent reach among automotive software, EV engineering and cloud program management professionals.</li>
+        <li><b>52 total named engagers</b> including Dhruv Anand (Country Head &amp; MD, Wipro Japan), Papila Harari (Director, Cognizant), and Bhavesh Sharma (AVP, Citi India).</li>
+        <li>Recurring engagement from Pooja Jagtap, Gaurav Singh, Ronit Durge, Kshitija Jagtap and Neha Somra across multiple posts, reflecting strong resonance with a core professional audience.</li>
+        <li>Average engagement rate of <b>4.1%</b> across all 4 posts.</li>
+      </ul>
+    </div>
+    <div class="chart-wrap">
+      <div class="chart-title">Impressions by Post</div>
+      <canvas id="impChart" height="200"></canvas>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-bottom:32px;">
+    <div class="chart-wrap">
+      <div class="chart-title">Engagement Breakdown (Likes vs Comments)</div>
+      <canvas id="engChart" height="200"></canvas>
+    </div>
+    <div>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead><tr><th>Post</th><th style="text-align:right;">Impressions</th><th style="text-align:right;">Likes</th><th style="text-align:right;">Comments</th><th style="text-align:right;">Reposts</th><th style="text-align:right;">Total Eng.</th><th style="text-align:right;">Rate</th></tr></thead>
+          <tbody><tr><td style="font-weight:600;">Post 21</td><td style="text-align:right;">897</td><td style="text-align:right;">57</td><td style="text-align:right;">2</td><td style="text-align:right;">0</td><td style="text-align:right;">59</td><td style="text-align:right;">6.6%</td></tr>
+<tr><td style="font-weight:600;">Post 22</td><td style="text-align:right;">567</td><td style="text-align:right;">17</td><td style="text-align:right;">0</td><td style="text-align:right;">0</td><td style="text-align:right;">17</td><td style="text-align:right;">3.0%</td></tr>
+<tr><td style="font-weight:600;">Post 23</td><td style="text-align:right;">269</td><td style="text-align:right;">9</td><td style="text-align:right;">0</td><td style="text-align:right;">0</td><td style="text-align:right;">9</td><td style="text-align:right;">3.3%</td></tr>
+<tr><td style="font-weight:600;">Post 24</td><td style="text-align:right;">253</td><td style="text-align:right;">9</td><td style="text-align:right;">0</td><td style="text-align:right;">0</td><td style="text-align:right;">9</td><td style="text-align:right;">3.6%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-head" style="margin-top:40px;"><div><div class="section-num" style="font-size:12px;">People Engaged</div><h2 style="font-size:20px;">Who Engaged on Each Post</h2></div></div>
+  <p class="section-intro" style="margin-bottom:20px;">Named individuals who liked or commented on each post. Filter by post using the tabs below.</p>
+  <div class="tabbar"><button class="eng-tab active" id="etab-Post_21" onclick="showEngTab('Post_21')">Post 21</button>
+<button class="eng-tab " id="etab-Post_22" onclick="showEngTab('Post_22')">Post 22</button>
+<button class="eng-tab " id="etab-Post_23" onclick="showEngTab('Post_23')">Post 23</button>
+<button class="eng-tab " id="etab-Post_24" onclick="showEngTab('Post_24')">Post 24</button>
+  </div>
+<div class="eng-panel" id="epanel-Post_21" style=""><table class="data-table"><thead><tr><th>Name</th><th>Role / Company</th></tr></thead><tbody><tr><td style="font-weight:500;">Kosal Ram Muthu</td><td style="color:var(--muted);">Engagement Manager – PreSales &amp; MBD/MBSE Solution Architect</td></tr>
+<tr><td style="font-weight:500;">Pooja Jagtap</td><td style="color:var(--muted);">Senior Business Analyst, Program Manager &amp; Product Manager</td></tr>
+<tr><td style="font-weight:500;">Satej Akolkar</td><td style="color:var(--muted);">Product Manager – Current Account, Outbound Sales Channel</td></tr>
+<tr><td style="font-weight:500;">Honey Sulkiya</td><td style="color:var(--muted);">Management Consulting Manager</td></tr>
+<tr><td style="font-weight:500;">Bhavesh Sharma</td><td style="color:var(--muted);">Assistant Vice President, Citi India</td></tr>
+<tr><td style="font-weight:500;">Anagha Arsud</td><td style="color:var(--muted);">Automotive Delivery Manager, Tata Consultancy Services Japan</td></tr>
+<tr><td style="font-weight:500;">Rohan Kulkarni</td><td style="color:var(--muted);">Business Development Manager – IoT Product Engineering, Cognizant</td></tr>
+<tr><td style="font-weight:500;">Papila Harari</td><td style="color:var(--muted);">Director, Cognizant Technology Solutions</td></tr>
+<tr><td style="font-weight:500;">Parul Tiwari</td><td style="color:var(--muted);">Technical Development Lead</td></tr>
+<tr><td style="font-weight:500;">Sanket Lande</td><td style="color:var(--muted);">Function Owner, Tata Consultancy Services Japan</td></tr>
+<tr><td style="font-weight:500;">Sushil Mehetre</td><td style="color:var(--muted);">Senior Program Manager – Business Relationship Management, TCS</td></tr>
+<tr><td style="font-weight:500;">Sumit Kumar</td><td style="color:var(--muted);">Manager – Projects, Cognizant</td></tr>
+<tr><td style="font-weight:500;">Prasanna Gadgil</td><td style="color:var(--muted);">Technology Lead, Infosys</td></tr>
+<tr><td style="font-weight:500;">Ankit Singh Thakur</td><td style="color:var(--muted);">Program Manager – Automotive Infotainment</td></tr>
+<tr><td style="font-weight:500;">Manas Gupta</td><td style="color:var(--muted);">Senior Specialist – Classic AUTOSAR &amp; Architecture</td></tr>
+<tr><td style="font-weight:500;">Ronit Durge</td><td style="color:var(--muted);">Technical Lead – Connected Car, Telematics &amp; Infotainment</td></tr>
+<tr><td style="font-weight:500;">Dhruv Anand</td><td style="color:var(--muted);">Country Head &amp; Managing Director, Wipro Japan</td></tr>
+<tr><td style="font-weight:500;">Amit Bhatia, PMP CSM</td><td style="color:var(--muted);">Program Manager, Cognizant</td></tr>
+<tr><td style="font-weight:500;">Amit Kakade</td><td style="color:var(--muted);">Project Manager, Tata Consultancy Services</td></tr>
+<tr><td style="font-weight:500;">Dipali Modak</td><td style="color:var(--muted);">MBD Subject Matter Expert &amp; Project Management</td></tr>
+<tr><td style="font-weight:500;">Ganesh Sutar</td><td style="color:var(--muted);">Delivery &amp; Program Leader – IT &amp; GCC Operations</td></tr>
+<tr><td style="font-weight:500;">Kshitija Jagtap</td><td style="color:var(--muted);">Digital Transformation Manager – Banking &amp; Automotive</td></tr>
+<tr><td style="font-weight:500;">Gaurav Singh</td><td style="color:var(--muted);">Program Manager – Technical Program Management, Automotive</td></tr>
+<tr><td style="font-weight:500;">Bhamini Sharma PMP</td><td style="color:var(--muted);">Program Manager, Thermo Fisher Scientific</td></tr>
+<tr><td style="font-weight:500;">Nitin Mishra</td><td style="color:var(--muted);">CIO &amp; CXO Advisor – AVP, SAP Service Delivery Architect</td></tr>
+<tr><td style="font-weight:500;">Rahul Shukla</td><td style="color:var(--muted);">Co-Founder &amp; CTO, Intelisa</td></tr>
+<tr><td style="font-weight:500;">Pankaj</td><td style="color:var(--muted);">Technical Program Manager – Cloud IoT &amp; Connected Car Platforms</td></tr>
+<tr><td style="font-weight:500;">Neha Somra</td><td style="color:var(--muted);">Project Manager &amp; Product Owner – Automotive Connected Vehicle V&amp;V</td></tr>
+<tr><td style="font-weight:500;">Vikas Sharma</td><td style="color:var(--muted);">Global Program &amp; Agile Delivery Leader – Engineering, Cloud &amp; Electrification</td></tr>
+</tbody></table></div>
+<div class="eng-panel" id="epanel-Post_22" style="display:none;"><table class="data-table"><thead><tr><th>Name</th><th>Role / Company</th></tr></thead><tbody><tr><td style="font-weight:500;">Rutika Joshi Bhatlavande</td><td style="color:var(--muted);">Project Manager &amp; Product Manager – AI Agents, Microsoft Dynamics 365</td></tr>
+<tr><td style="font-weight:500;">Gaurav Singh</td><td style="color:var(--muted);">Program Manager – Technical Program Management, Automotive</td></tr>
+<tr><td style="font-weight:500;">Vijay Kewlani</td><td style="color:var(--muted);">Project Manager – PMO &amp; Connected Car Services</td></tr>
+<tr><td style="font-weight:500;">Dinesh Singh</td><td style="color:var(--muted);">Systems Engineering Manager &amp; AI Consultant – Mobility, TCS Japan</td></tr>
+<tr><td style="font-weight:500;">Kritika Singh Sengar</td><td style="color:var(--muted);">Technical Associate Project Manager – Automotive Software &amp; Connected Vehicles</td></tr>
+<tr><td style="font-weight:500;">Mayank Sahu</td><td style="color:var(--muted);">Senior Product Owner &amp; Team Leader – Automotive Embedded &amp; Telematics</td></tr>
+<tr><td style="font-weight:500;">Pooja Jagtap</td><td style="color:var(--muted);">Senior Business Analyst, Program Manager &amp; Product Manager</td></tr>
+<tr><td style="font-weight:500;">Ronit Durge</td><td style="color:var(--muted);">Technical Lead – Connected Car, Telematics &amp; Infotainment</td></tr>
+<tr><td style="font-weight:500;">Pravinder Singh</td><td style="color:var(--muted);">Engineering Manager – Connected Services, Cognizant at Stellantis</td></tr>
+<tr><td style="font-weight:500;">Ashish Ranjan</td><td style="color:var(--muted);">Senior Project Manager, HCLTech</td></tr>
+<tr><td style="font-weight:500;">Kshitija Jagtap</td><td style="color:var(--muted);">Digital Transformation Manager – Banking &amp; Automotive</td></tr>
+<tr><td style="font-weight:500;">Neha Somra</td><td style="color:var(--muted);">Project Manager &amp; Product Owner – Automotive Connected Vehicle V&amp;V</td></tr>
+</tbody></table></div>
+<div class="eng-panel" id="epanel-Post_23" style="display:none;"><table class="data-table"><thead><tr><th>Name</th><th>Role / Company</th></tr></thead><tbody><tr><td style="font-weight:500;">Belkys Hernandez Mejias, MSc</td><td style="color:var(--muted);">Senior Delivery Manager – Data Strategy &amp; Continuous Improvement</td></tr>
+<tr><td style="font-weight:500;">Pooja Jagtap</td><td style="color:var(--muted);">Senior Business Analyst, Program Manager &amp; Product Manager</td></tr>
+<tr><td style="font-weight:500;">Harsh Ved</td><td style="color:var(--muted);">Infrastructure &amp; Resilience Leader – AIOps &amp; Cloud FinOps</td></tr>
+<tr><td style="font-weight:500;">Neha Somra</td><td style="color:var(--muted);">Project Manager &amp; Product Owner – Automotive Connected Vehicle V&amp;V</td></tr>
+<tr><td style="font-weight:500;">Sudipto Poddar</td><td style="color:var(--muted);">Senior Automotive &amp; EV Validation Engineer</td></tr>
+</tbody></table></div>
+<div class="eng-panel" id="epanel-Post_24" style="display:none;"><table class="data-table"><thead><tr><th>Name</th><th>Role / Company</th></tr></thead><tbody><tr><td style="font-weight:500;">Reema Munot</td><td style="color:var(--muted);">Agile Project Manager – Application Development</td></tr>
+<tr><td style="font-weight:500;">Sanjay Dungarwal</td><td style="color:var(--muted);">Senior Project Manager – SAFe Certified POPM</td></tr>
+<tr><td style="font-weight:500;">Bhavesh Sharma</td><td style="color:var(--muted);">Assistant Vice President, Citi India</td></tr>
+<tr><td style="font-weight:500;">Pooja Jagtap</td><td style="color:var(--muted);">Senior Business Analyst, Program Manager &amp; Product Manager</td></tr>
+<tr><td style="font-weight:500;">Gaurav Singh</td><td style="color:var(--muted);">Program Manager – Technical Program Management, Automotive</td></tr>
+<tr><td style="font-weight:500;">Sudipto Poddar</td><td style="color:var(--muted);">Senior Automotive &amp; EV Validation Engineer</td></tr>
+</tbody></table></div>
+
+  <div style="margin-top:36px;">
+    <div class="section-num" style="font-size:12px;margin-bottom:6px;">Notable Engagers</div>
+    <div style="font-family:'Fraunces',serif;font-size:20px;font-weight:600;margin-bottom:8px;">Senior Profiles</div>
+    <p style="font-size:14px;color:var(--ink-soft);margin-bottom:16px;">A selection of the most senior individuals who engaged with Month 6 content.</p>
+    <div class="people-grid"><div class="notable-card"><div class="notable-avatar">DA</div><div class="notable-info"><div class="notable-name">Dhruv Anand</div><div class="notable-role">Country Head &amp; Managing Director</div><div class="notable-company">Wipro Japan</div></div></div>
+<div class="notable-card"><div class="notable-avatar">PH</div><div class="notable-info"><div class="notable-name">Papila Harari</div><div class="notable-role">Director</div><div class="notable-company">Cognizant Technology Solutions</div></div></div>
+<div class="notable-card"><div class="notable-avatar">BS</div><div class="notable-info"><div class="notable-name">Bhavesh Sharma</div><div class="notable-role">Assistant Vice President</div><div class="notable-company">Citi India</div></div></div>
+<div class="notable-card"><div class="notable-avatar">GS</div><div class="notable-info"><div class="notable-name">Ganesh Sutar</div><div class="notable-role">Delivery &amp; Program Leader</div><div class="notable-company">IT &amp; GCC Operations</div></div></div>
+<div class="notable-card"><div class="notable-avatar">HS</div><div class="notable-info"><div class="notable-name">Honey Sulkiya</div><div class="notable-role">Management Consulting Manager</div><div class="notable-company"></div></div></div>
+<div class="notable-card"><div class="notable-avatar">BH</div><div class="notable-info"><div class="notable-name">Belkys Hernandez Mejias</div><div class="notable-role">Senior Delivery Manager</div><div class="notable-company">Data Strategy &amp; Continuous Improvement</div></div></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 02 NETWORK -->
+<section id="network"><div class="wrap">
+  <div class="section-head"><div><div class="section-num">02 &mdash; Network Growth</div><h2>Connection &amp; Outreach</h2></div></div>
+  <p class="section-intro">In Month 6, 700 connection requests were sent to senior professionals in automotive embedded systems, connected mobility, EV/electrification, and IT delivery across HCLTech, Tata Elxsi, Accenture, Wipro, Capgemini and peer organisations. Over 300 connections were accepted.</p>
+
+  <div class="grid-2" style="margin-bottom:32px;">
+    <div>
+      <div class="funnel" style="margin-bottom:28px;">
+        <div class="funnel-step">
+          <div class="funnel-label">Requests Sent</div>
+          <div class="funnel-bar-bg"><div class="funnel-bar-fill" style="width:100%"></div></div>
+          <div class="funnel-val">700</div>
+        </div>
+        <div class="funnel-step">
+          <div class="funnel-label">Accepted</div>
+          <div class="funnel-bar-bg"><div class="funnel-bar-fill" style="width:43%"></div></div>
+          <div class="funnel-val">300+</div>
+        </div>
+      </div>
+      <div class="grid-4">
+        <div class="stat-card"><div class="n teal">700</div><div class="l">Requests Sent</div></div>
+        <div class="stat-card"><div class="n teal">300+</div><div class="l">Accepted</div></div>
+        <div class="stat-card"><div class="n gold">&gt;42%</div><div class="l">Acceptance Rate</div></div>
+        <div class="stat-card"><div class="n">2</div><div class="l">Opportunities</div></div>
+      </div>
+    </div>
+    <div class="chart-wrap">
+      <div class="chart-title">Requests Sent vs Accepted</div>
+      <canvas id="netChart" height="200"></canvas>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:16px;color:var(--ink);">Outreach by Company (Top 10 — Requests Sent)</div>
+      <div><div class="company-bar-row"><div class="company-bar-label">HCLTech</div><div class="company-bar-bg"><div class="company-bar-fill" style="width:100%"></div></div><div class="company-bar-val">72</div></div>
+<div class="company-bar-row"><div class="company-bar-label">Tata Elxsi</div><div class="company-bar-bg"><div class="company-bar-fill" style="width:81%"></div></div><div class="company-bar-val">58</div></div>
+<div class="company-bar-row"><div class="company-bar-label">Accenture</div><div class="company-bar-bg"><div class="company-bar-fill" style="width:49%"></div></div><div class="company-bar-val">35</div></div>
+<div class="company-bar-row"><div class="company-bar-label">Capgemini</div><div class="company-bar-bg"><div class="company-bar-fill" style="width:40%"></div></div><div class="company-bar-val">29</div></div>
+<div class="company-bar-row"><div class="company-bar-label">ABB</div><div class="company-bar-bg"><div class="company-bar-fill" style="width:38%"></div></div><div class="company-bar-val">27</div></div>
+<div class="company-bar-row"><div class="company-bar-label">Maruti Suzuki India Limited</div><div class="company-bar-bg"><div class="company-bar-fill" style="width:38%"></div></div><div class="company-bar-val">27</div></div>
+<div class="company-bar-row"><div class="company-bar-label">Wipro</div><div class="company-bar-bg"><div class="company-bar-fill" style="width:36%"></div></div><div class="company-bar-val">26</div></div>
+<div class="company-bar-row"><div class="company-bar-label">Aptiv</div><div class="company-bar-bg"><div class="company-bar-fill" style="width:35%"></div></div><div class="company-bar-val">25</div></div>
+<div class="company-bar-row"><div class="company-bar-label">Bosch</div><div class="company-bar-bg"><div class="company-bar-fill" style="width:31%"></div></div><div class="company-bar-val">22</div></div>
+<div class="company-bar-row"><div class="company-bar-label">KPIT</div><div class="company-bar-bg"><div class="company-bar-fill" style="width:29%"></div></div><div class="company-bar-val">21</div></div>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:12px;color:var(--ink);">Connections Accepted</div>
+      <div class="table-scroll" style="max-height:420px;">
+        <table class="data-table">
+          <thead><tr><th>Name</th><th>Role</th><th>Company</th></tr></thead>
+          <tbody><tr><td style="font-weight:500;">Jahnavi Srivastava</td><td style="color:var(--muted);font-size:13px;">Electrice Mobility - Manager</td><td style="color:var(--ink-soft);font-size:13px;">Capgemini Invent</td></tr>
+<tr><td style="font-weight:500;">Piyush Sagolekar</td><td style="color:var(--muted);font-size:13px;">Associate Director</td><td style="color:var(--ink-soft);font-size:13px;">Accenture India</td></tr>
+<tr><td style="font-weight:500;">Saajal Sharma</td><td style="color:var(--muted);font-size:13px;">AVP - Digital Transformation</td><td style="color:var(--ink-soft);font-size:13px;">Accenture India</td></tr>
+<tr><td style="font-weight:500;">Rohan Chhatwal</td><td style="color:var(--muted);font-size:13px;">VP - Innovation Business Excellence &amp; DE Governance Excellence</td><td style="color:var(--ink-soft);font-size:13px;">Maruti Suzuki India</td></tr>
+<tr><td style="font-weight:500;">Rahul Kumar</td><td style="color:var(--muted);font-size:13px;">Head - Innovation Excellence</td><td style="color:var(--ink-soft);font-size:13px;">Maruti Suzuki India</td></tr>
+<tr><td style="font-weight:500;">CV Raman</td><td style="color:var(--muted);font-size:13px;">Executive Committee member &amp; former CTO</td><td style="color:var(--ink-soft);font-size:13px;">Maruti Suzuki India</td></tr>
+<tr><td style="font-weight:500;">Shaju S.</td><td style="color:var(--muted);font-size:13px;">Senior VP - President and Head</td><td style="color:var(--ink-soft);font-size:13px;">Tata Elxsi</td></tr>
+<tr><td style="font-weight:500;">Rajesh Ramachandran</td><td style="color:var(--muted);font-size:13px;">Global Chief Digital Officer &amp; MD</td><td style="color:var(--ink-soft);font-size:13px;">ABB</td></tr>
+<tr><td style="font-weight:500;">Jaidev Venkataraman</td><td style="color:var(--muted);font-size:13px;">Head of Global Technical Centre</td><td style="color:var(--ink-soft);font-size:13px;">Valeo</td></tr>
+<tr><td style="font-weight:500;">Surya Narayanan</td><td style="color:var(--muted);font-size:13px;">Senior Process Specialist</td><td style="color:var(--ink-soft);font-size:13px;">Valeo</td></tr>
+<tr><td style="font-weight:500;">Jaidev Venkataraman</td><td style="color:var(--muted);font-size:13px;">Head of Global Technical Center</td><td style="color:var(--ink-soft);font-size:13px;">Valeo</td></tr>
+<tr><td style="font-weight:500;">Thirumala Reddy Idamakanti</td><td style="color:var(--muted);font-size:13px;">System Engineer</td><td style="color:var(--ink-soft);font-size:13px;">Valeo</td></tr>
+<tr><td style="font-weight:500;">Shivani Shah</td><td style="color:var(--muted);font-size:13px;">System Technical Project Manager</td><td style="color:var(--ink-soft);font-size:13px;">Valeo</td></tr>
+<tr><td style="font-weight:500;">Gaurav Kakati</td><td style="color:var(--muted);font-size:13px;">VP &amp; CTO</td><td style="color:var(--ink-soft);font-size:13px;">KPIT</td></tr>
+<tr><td style="font-weight:500;">Manju Kulkarni</td><td style="color:var(--muted);font-size:13px;">VP and Head of Global Sales</td><td style="color:var(--ink-soft);font-size:13px;">Tata Elxsi</td></tr>
+<tr><td style="font-weight:500;">Jayant Moon</td><td style="color:var(--muted);font-size:13px;">Senior Director</td><td style="color:var(--ink-soft);font-size:13px;">KPIT</td></tr>
+<tr><td style="font-weight:500;">Ashwin Upadhyaya</td><td style="color:var(--muted);font-size:13px;">Associate VP - Talent Acqusition &amp; Work Force</td><td style="color:var(--ink-soft);font-size:13px;">KPIT</td></tr>
+<tr><td style="font-weight:500;">Saif Khan</td><td style="color:var(--muted);font-size:13px;">MD and CEO</td><td style="color:var(--ink-soft);font-size:13px;">BSH</td></tr>
+<tr><td style="font-weight:500;">Saif Khan</td><td style="color:var(--muted);font-size:13px;">MD and CEO</td><td style="color:var(--ink-soft);font-size:13px;">BSH</td></tr>
+<tr><td style="font-weight:500;">Dr. Gopichand Agnihotram</td><td style="color:var(--muted);font-size:13px;">Director of AI/ML</td><td style="color:var(--ink-soft);font-size:13px;">Wirpo CTO office</td></tr>
+<tr><td style="font-weight:500;">Hari Shetty</td><td style="color:var(--muted);font-size:13px;">Chief Strategish &amp; Technology Officer</td><td style="color:var(--ink-soft);font-size:13px;">Wipro</td></tr>
+<tr><td style="font-weight:500;">Gurpreet Singh Arora</td><td style="color:var(--muted);font-size:13px;">CTO | IT &amp; Operations</td><td style="color:var(--ink-soft);font-size:13px;">Wipro</td></tr>
+<tr><td style="font-weight:500;">Kumar Rethi</td><td style="color:var(--muted);font-size:13px;">VP of AI Platform</td><td style="color:var(--ink-soft);font-size:13px;">Wipro</td></tr>
+<tr><td style="font-weight:500;">Vivek Ranjan</td><td style="color:var(--muted);font-size:13px;">CHRO</td><td style="color:var(--ink-soft);font-size:13px;">Wipro</td></tr>
+<tr><td style="font-weight:500;">Ajay Kumar</td><td style="color:var(--muted);font-size:13px;">CHRO</td><td style="color:var(--ink-soft);font-size:13px;">Tata Electronics</td></tr>
+<tr><td style="font-weight:500;">Dhruv Srivastava</td><td style="color:var(--muted);font-size:13px;">Automotive EV Leadership</td><td style="color:var(--ink-soft);font-size:13px;">Wipro</td></tr>
+<tr><td style="font-weight:500;">Dhruv Srivastava</td><td style="color:var(--muted);font-size:13px;">Automotive EV Leadership</td><td style="color:var(--ink-soft);font-size:13px;">Wipro</td></tr>
+<tr><td style="font-weight:500;">Shital Sawant</td><td style="color:var(--muted);font-size:13px;">Technical Lead ADAS</td><td style="color:var(--ink-soft);font-size:13px;">Wipro</td></tr>
+<tr><td style="font-weight:500;">Sudhakar DV</td><td style="color:var(--muted);font-size:13px;">General Manager</td><td style="color:var(--ink-soft);font-size:13px;">Wipro</td></tr>
+<tr><td style="font-weight:500;">Anand Tiwari</td><td style="color:var(--muted);font-size:13px;">Global Head and Director - HR</td><td style="color:var(--ink-soft);font-size:13px;">Tata Technologies</td></tr>
+<tr><td style="font-weight:500;">Anand Kumar Sinha</td><td style="color:var(--muted);font-size:13px;">CIO</td><td style="color:var(--ink-soft);font-size:13px;">Tata Technologies</td></tr>
+<tr><td style="font-weight:500;">Raghavan Venugopal</td><td style="color:var(--muted);font-size:13px;">Associate Vice President</td><td style="color:var(--ink-soft);font-size:13px;">Quest Global</td></tr>
+<tr><td style="font-weight:500;">Arvind Saxena</td><td style="color:var(--muted);font-size:13px;">MD</td><td style="color:var(--ink-soft);font-size:13px;">General Motors</td></tr>
+<tr><td style="font-weight:500;">Prabhakaran R</td><td style="color:var(--muted);font-size:13px;">Information Technology Leader</td><td style="color:var(--ink-soft);font-size:13px;">General Motors</td></tr>
+<tr><td style="font-weight:500;">Prashant Swadia</td><td style="color:var(--muted);font-size:13px;">Director</td><td style="color:var(--ink-soft);font-size:13px;">General Motors</td></tr>
+<tr><td style="font-weight:500;">Devaiah Napanda</td><td style="color:var(--muted);font-size:13px;">Manager Human Resource</td><td style="color:var(--ink-soft);font-size:13px;">General Motors</td></tr>
+<tr><td style="font-weight:500;">Arpan Jain</td><td style="color:var(--muted);font-size:13px;">Senior Manager-Finance at Mercedes-Benz Research and Development India</td><td style="color:var(--ink-soft);font-size:13px;">MBRDI</td></tr>
+<tr><td style="font-weight:500;">Shekhar Chhajer</td><td style="color:var(--muted);font-size:13px;">Transforming Automotive IT for Sales</td><td style="color:var(--ink-soft);font-size:13px;">MBRDI</td></tr>
+<tr><td style="font-weight:500;">Rachit Mathur</td><td style="color:var(--muted);font-size:13px;">Vice President @ Mercedes-Benz</td><td style="color:var(--ink-soft);font-size:13px;">MBRDI</td></tr>
+<tr><td style="font-weight:500;">Vivek Khariwal</td><td style="color:var(--muted);font-size:13px;">VP</td><td style="color:var(--ink-soft);font-size:13px;">MBRDI</td></tr>
+<tr><td style="font-weight:500;">Naresh Tated</td><td style="color:var(--muted);font-size:13px;">Regional Technology Leader</td><td style="color:var(--ink-soft);font-size:13px;">MBRDI</td></tr>
+<tr><td style="font-weight:500;">Dr. Vikraman V</td><td style="color:var(--muted);font-size:13px;">Chief of Renault Engineering,Renault Group India,Leading the incredible engineering team of Renault Group India to create world-class products for India and for the world !</td><td style="color:var(--ink-soft);font-size:13px;">RNTBCI</td></tr>
+<tr><td style="font-weight:500;">Abhijit Das</td><td style="color:var(--muted);font-size:13px;">Automotive Engineering Leader | Chief Vehicle Engineer @ Renault | Program &amp; Vehicle Development | Platform Strategy | Leading Cross-Functional Global Engineering Teams</td><td style="color:var(--ink-soft);font-size:13px;">RNTBCI</td></tr>
+<tr><td style="font-weight:500;">Achuthan Nair</td><td style="color:var(--muted);font-size:13px;">Vice President - Program Renault India; Indian School of Business</td><td style="color:var(--ink-soft);font-size:13px;">RNTBCI</td></tr>
+<tr><td style="font-weight:500;">Madhusoodan M.D</td><td style="color:var(--muted);font-size:13px;">Vehicle NVH - Project &amp; Test Lead</td><td style="color:var(--ink-soft);font-size:13px;">RNTBCI</td></tr>
+<tr><td style="font-weight:500;">Rashmi Karurmath</td><td style="color:var(--muted);font-size:13px;">Market Head</td><td style="color:var(--ink-soft);font-size:13px;">AUMOVIO</td></tr>
+<tr><td style="font-weight:500;">Musharraf Shaikh</td><td style="color:var(--muted);font-size:13px;">Lead Consultant - Executive Hiring</td><td style="color:var(--ink-soft);font-size:13px;">Capgemini</td></tr>
+<tr><td style="font-weight:500;">Sumeet Bhat</td><td style="color:var(--muted);font-size:13px;">Senior Manager</td><td style="color:var(--ink-soft);font-size:13px;">Accenture</td></tr>
+<tr><td style="font-weight:500;">JAYDEEP JONDHALE</td><td style="color:var(--muted);font-size:13px;">Deputy manager Utility Ops &amp; Infra Projects</td><td style="color:var(--ink-soft);font-size:13px;">Mahindra Group</td></tr>
+<tr><td style="font-weight:500;">Ujjwal Jyoti</td><td style="color:var(--muted);font-size:13px;">Managing Director (Partner)</td><td style="color:var(--ink-soft);font-size:13px;">Accenture</td></tr>
+<tr><td style="font-weight:500;">Sujit Joseph</td><td style="color:var(--muted);font-size:13px;">Lead Business Area HRBP, Electrification, India, Bangladesh &amp; Srilanka , Location IR Head</td><td style="color:var(--ink-soft);font-size:13px;">ABB</td></tr>
+<tr><td style="font-weight:500;">Sourabh Malik</td><td style="color:var(--muted);font-size:13px;">Senior Operations Manager</td><td style="color:var(--ink-soft);font-size:13px;">Accenture</td></tr>
+<tr><td style="font-weight:500;">Roselin Edwin Charles</td><td style="color:var(--muted);font-size:13px;">Senior Manager</td><td style="color:var(--ink-soft);font-size:13px;">Wipro</td></tr>
+<tr><td style="font-weight:500;">Sanjeev Puri</td><td style="color:var(--muted);font-size:13px;">Senior Engagement Manager</td><td style="color:var(--ink-soft);font-size:13px;">Capgemini</td></tr>
+<tr><td style="font-weight:500;">Shalakha Punekar</td><td style="color:var(--muted);font-size:13px;">Marketing Communications Manager</td><td style="color:var(--ink-soft);font-size:13px;">ABB</td></tr>
+<tr><td style="font-weight:500;">Anurag Bakshi</td><td style="color:var(--muted);font-size:13px;">Consumer Insights &amp; Marketing Analytics (AVP)</td><td style="color:var(--ink-soft);font-size:13px;">Accenture</td></tr>
+<tr><td style="font-weight:500;">JAYDEEP JONDHALE</td><td style="color:var(--muted);font-size:13px;">Deputy manager Utility Ops &amp; Infra Projects</td><td style="color:var(--ink-soft);font-size:13px;">Mahindra Group</td></tr>
+<tr><td style="font-weight:500;">V. Edward Angello Thomas</td><td style="color:var(--muted);font-size:13px;">Director (Global Head - Transition, Transformation, Delivery Operations, P&amp;L &amp; Governance)</td><td style="color:var(--ink-soft);font-size:13px;">HCL Technologies</td></tr>
+<tr><td style="font-weight:500;">Kapil Agarwal</td><td style="color:var(--muted);font-size:13px;">Sr. Vice President &amp; Local Division Manager - Process Industries Division, Country Management</td><td style="color:var(--ink-soft);font-size:13px;">ABB</td></tr>
+<tr><td style="font-weight:500;">Parived Bhatnagar</td><td style="color:var(--muted);font-size:13px;">Human Resources Director: Head HR for Delhi (Gurugram, Noida, Jaipur centers) &amp; Chennai</td><td style="color:var(--ink-soft);font-size:13px;">Accenture</td></tr>
+<tr><td style="font-weight:500;">Sajjad Ahmed Shaik</td><td style="color:var(--muted);font-size:13px;">Global Head of Learning – Insights &amp; Data (Senior Director, HR)</td><td style="color:var(--ink-soft);font-size:13px;">Capgemini</td></tr>
+<tr><td style="font-weight:500;">Nitesh Aggarwal</td><td style="color:var(--muted);font-size:13px;">Chief Strategy Officer (CSO), Chief Risk Officer (CRO) and Head, Partnerships and Alliances</td><td style="color:var(--ink-soft);font-size:13px;">Tech Mahindra</td></tr>
+<tr><td style="font-weight:500;">Rajesh Singh</td><td style="color:var(--muted);font-size:13px;">Senior Vice President</td><td style="color:var(--ink-soft);font-size:13px;">KPIT</td></tr>
+<tr><td style="font-weight:500;">Vineet Tandon</td><td style="color:var(--muted);font-size:13px;">Senior Director of Marketing</td><td style="color:var(--ink-soft);font-size:13px;">HCLTech</td></tr>
+<tr><td style="font-weight:500;">Mohit Mathur</td><td style="color:var(--muted);font-size:13px;">Head of Innovation</td><td style="color:var(--ink-soft);font-size:13px;">HCLTech</td></tr>
+<tr><td style="font-weight:500;">Sankara Narayanan</td><td style="color:var(--muted);font-size:13px;">Managing Director - Talent Strategy, Advanced Technology Center, India</td><td style="color:var(--ink-soft);font-size:13px;">Accenture</td></tr>
+<tr><td style="font-weight:500;">Sanjeev kumar Singh</td><td style="color:var(--muted);font-size:13px;">Chief Operating Officer</td><td style="color:var(--ink-soft);font-size:13px;">Ather Energy</td></tr>
+<tr><td style="font-weight:500;">Rajarshi Banerjee</td><td style="color:var(--muted);font-size:13px;">Head of Business Development</td><td style="color:var(--ink-soft);font-size:13px;">ABB</td></tr>
+<tr><td style="font-weight:500;">Vikas Singh Baghel</td><td style="color:var(--muted);font-size:13px;">Associate Director - HR</td><td style="color:var(--ink-soft);font-size:13px;">HCLTech</td></tr>
+<tr><td style="font-weight:500;">Syed Mohammed Aamir</td><td style="color:var(--muted);font-size:13px;">Director-HR Business Partner</td><td style="color:var(--ink-soft);font-size:13px;">Capgemini</td></tr>
+<tr><td style="font-weight:500;">Preeti Chopra</td><td style="color:var(--muted);font-size:13px;">Chief Human Resources Officer</td><td style="color:var(--ink-soft);font-size:13px;">Capgemini</td></tr>
+<tr><td style="font-weight:500;">Shubham Bhardwaj</td><td style="color:var(--muted);font-size:13px;">Vice President - Global HR Transformation</td><td style="color:var(--ink-soft);font-size:13px;">Accenture</td></tr>
+<tr><td style="font-weight:500;">Rohan Chhatwal</td><td style="color:var(--muted);font-size:13px;">Vice President Innovation Business Excellence &amp; DE Governance Excellence</td><td style="color:var(--ink-soft);font-size:13px;">Maruti Suzuki India Limited</td></tr>
+<tr><td style="font-weight:500;">Prasad Patole</td><td style="color:var(--muted);font-size:13px;">Associate Director of Sales - GCC</td><td style="color:var(--ink-soft);font-size:13px;">L&amp;T Technology Services</td></tr>
+<tr><td style="font-weight:500;">Sharan Peddi</td><td style="color:var(--muted);font-size:13px;">Head Talent Acquisition for BFS, HiTech, Telecom &amp; Procurement COE Projects</td><td style="color:var(--ink-soft);font-size:13px;">HCLTech</td></tr>
+<tr><td style="font-weight:500;">Dr.-Ing. Sirous Etemadi</td><td style="color:var(--muted);font-size:13px;">Plant Manager</td><td style="color:var(--ink-soft);font-size:13px;">Bosch India</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 03 OUTCOMES -->
+<section id="outcomes"><div class="wrap">
+  <div class="section-head"><div><div class="section-num">03 &mdash; Inbound Opportunities</div><h2>Responses &amp; Outcomes</h2></div></div>
+  <p class="section-intro">Month 6 generated 2 inbound opportunities — a Director-level role at EPAM Systems and senior-level openings at KPIT — both initiated by talent acquisition and executive search professionals in response to Vikas's LinkedIn presence.</p>
+  <div style="max-width:760px;">
+    <div class="outcome-card">
+      <div class="outcome-type">&#10024; Director-level opportunity &ndash; EPAM Systems</div>
+      <div class="outcome-name">Manjula Rangaiah</div>
+      <div class="outcome-role">Leadership-hiring Consultant; IIM Kozhikode, HR Management &amp; Analytics</div>
+      <div class="outcome-co">Executive Search / Talent Consulting</div>
+      <div class="outcome-detail">Reached out about a Director-level opportunity at EPAM Systems, citing Vikas's background as Associate Director at Cognizant and his experience in global program management and digital transformation.</div>
+    </div>
+    <div class="outcome-card">
+      <div class="outcome-type">&#10024; Senior Program Manager opening &amp; senior-level roles</div>
+      <div class="outcome-name">Jayant Moon</div>
+      <div class="outcome-role">India &amp; ROW Geo Head, Talent Acquisition Group</div>
+      <div class="outcome-co">KPIT</div>
+      <div class="outcome-detail">Opened a discussion about multiple senior-level openings at KPIT and shared the job description for a Senior Program Manager role, reaching out through Vikas's professional network.</div>
+    </div>
+  </div>
+</div></section>
+
+<footer style="background:var(--ink);padding:40px 0;">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+    <div>
+      <img src="data:image/png;base64,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" alt="GroNXT" style="height:18px;width:auto;display:block;margin-bottom:8px;opacity:.8;">
+      <div style="font-size:12px;color:#5a6378;">LinkedIn Branding &amp; Career Strategy</div>
+    </div>
+    <div style="font-size:12px;color:#5a6378;text-align:right;">
+      Vikas Sharma &mdash; Month 6 Report<br>
+      Prepared by GroNXT &mdash; Confidential
+    </div>
+  </div>
+</footer>
+</div>
+<script>
+
+(function(){
+  var cdns=[
+    'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js',
+    'https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js',
+    'https://unpkg.com/chart.js@4.4.4/dist/chart.umd.min.js'
+  ];
+  function tryLoad(i){if(i>=cdns.length)return;var s=document.createElement('script');s.src=cdns[i];s.onload=function(){document.dispatchEvent(new Event('chartjs-ready'));};s.onerror=function(){tryLoad(i+1);};document.head.appendChild(s);}
+  tryLoad(0);
+})();
+
+var IMP_LABELS=["Post 21", "Post 22", "Post 23", "Post 24"];
+var IMP_DATA=[897, 567, 269, 253];
+var LIKES_DATA=[57, 17, 9, 9];
+var COMMENTS_DATA=[2, 0, 0, 0];
+
+function initCharts(){
+  if(typeof Chart==='undefined'){document.addEventListener('chartjs-ready',initCharts,{once:true});return;}
+  var ctx1=document.getElementById('impChart');
+  if(ctx1){new Chart(ctx1,{type:'bar',data:{labels:IMP_LABELS,datasets:[{label:'Impressions',data:IMP_DATA,backgroundColor:'rgba(31,111,99,0.75)',borderColor:'rgba(31,111,99,1)',borderWidth:1,borderRadius:4}]},options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,grid:{color:'rgba(0,0,0,.06)'},ticks:{font:{size:11}}},x:{grid:{display:false},ticks:{font:{size:11}}}}}});}
+  var ctx2=document.getElementById('engChart');
+  if(ctx2){new Chart(ctx2,{type:'bar',data:{labels:IMP_LABELS,datasets:[{label:'Likes',data:LIKES_DATA,backgroundColor:'rgba(31,111,99,0.75)',borderRadius:4},{label:'Comments',data:COMMENTS_DATA,backgroundColor:'rgba(184,137,47,0.7)',borderRadius:4}]},options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{position:'bottom',labels:{font:{size:11},boxWidth:12}}},scales:{y:{stacked:true,beginAtZero:true,grid:{color:'rgba(0,0,0,.06)'},ticks:{font:{size:11}}},x:{stacked:true,grid:{display:false},ticks:{font:{size:11}}}}}});}
+  var ctx3=document.getElementById('netChart');
+  if(ctx3){new Chart(ctx3,{type:'bar',data:{labels:['Month 6'],datasets:[{label:'Requests Sent',data:[700],backgroundColor:'rgba(31,111,99,0.45)',borderRadius:4},{label:'Accepted (300+)',data:[300],backgroundColor:'rgba(31,111,99,0.9)',borderRadius:4}]},options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{position:'bottom',labels:{font:{size:11},boxWidth:12}}},scales:{y:{beginAtZero:true,grid:{color:'rgba(0,0,0,.06)'},ticks:{font:{size:11}}},x:{grid:{display:false},ticks:{font:{size:11}}}}}});}
+}
+
+document.addEventListener('chartjs-ready',initCharts,{once:true});
+if(typeof Chart!=='undefined') initCharts();
+
+function showEngTab(postKey){
+  document.querySelectorAll('.eng-panel').forEach(function(p){p.style.display='none';});
+  document.querySelectorAll('.eng-tab').forEach(function(b){b.classList.remove('active');});
+  var panel=document.getElementById('epanel-'+postKey);
+  var tab=document.getElementById('etab-'+postKey);
+  if(panel)panel.style.display='';
+  if(tab)tab.classList.add('active');
+}
+
+(function(){
+  var links=document.querySelectorAll('.rail-nav a');
+  var sections=Array.from(links).map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function onScroll(){var y=window.scrollY+120;var active=0;sections.forEach(function(s,i){if(s&&s.offsetTop<=y)active=i;});links.forEach(function(l,i){l.classList.toggle('active',i===active);});}
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
+
+</script>
+</body>
+</html>
